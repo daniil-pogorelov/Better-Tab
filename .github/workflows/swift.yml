@@ -1,0 +1,36 @@
+name: Swift Build and Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build_and_test:
+    name: Build and Test macOS App
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Select Xcode version
+      run: |
+        sudo xcode-select -s /Applications/Xcode_16.3.app # Adjust Xcode version as needed
+        xcodebuild -version
+        swift --version
+      # You can find available Xcode versions on GitHub Actions runners here:
+      # https://github.com/actions/runner-images#available-images
+
+    - name: Build application
+      run: |
+        xcodebuild build -scheme BetterTab -destination 'platform=macOS' CODE_SIGNING_ALLOWED=NO
+      # Replace 'BetterTab' with your actual scheme name if different.
+      # CODE_SIGNING_ALLOWED=NO is often used for CI builds that don't need to be archived or distributed.
+
+    - name: Run tests
+      run: |
+        xcodebuild test -scheme BetterTab -destination 'platform=macOS'
+      # Replace 'BetterTab' with your actual scheme name if different.
+      # Ensure your scheme has tests enabled and configured.

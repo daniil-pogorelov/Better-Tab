@@ -26,6 +26,16 @@ BetterTab is a macOS application designed to enhance your app switching experien
         * Press `Escape` to dismiss the switcher without making a selection.
     * Release the global hotkey's primary modifier (e.g., `Option` if your shortcut is `Option+Tab`) to activate the currently selected application in the switcher.
 
+## 📸 Screenshots
+
+Here's a glimpse of BetterTab in action:
+
+![BetterTab Switcher Preview](./docs/assets/images/BetterApp_Switcher.png)
+*Standard app switcher view.*
+
+![BetterTab Switcher with Filtered Apps](./docs/assets/images/BetterApp_Switcher_Two_Apps.png)
+*Filtering apps by typing "s".*
+
 ## Preferences
 
 Access preferences via the status bar menu icon or by pressing `Command+,` when the app is active (if it has a main menu visible).
@@ -60,7 +70,7 @@ Access preferences via the status bar menu icon or by pressing `Command+,` when 
 
 ## Installation
 
-1.  Download the latest `BetterTab.app` from the [Releases page]([https://github.com/daniil-pogorelov/BetterTab/releases](https://github.com/daniil-pogorelov/Better-Tab/tags)).
+1.  Download the latest `BetterTab.app` from the [Releases page](https://github.com/daniil-pogorelov/Better-Tab/tags).
 2.  Drag `BetterTab.app` to your `/Applications` folder.
 3.  On first launch, macOS will likely ask for Accessibility permissions. Please grant these for BetterTab to function correctly. You can manage these in `System Settings > Privacy & Security > Accessibility`.
 
@@ -68,7 +78,7 @@ Access preferences via the status bar menu icon or by pressing `Command+,` when 
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/BetterTab.git](https://github.com/YOUR_USERNAME/BetterTab.git)
+    git clone [https://github.com/daniil-pogorelov/Better-Tab.git](https://github.com/daniil-pogorelov/Better-Tab.git)
     cd BetterTab
     ```
 2.  Open `BetterTab.xcodeproj` in Xcode.
@@ -88,6 +98,12 @@ Access preferences via the status bar menu icon or by pressing `Command+,` when 
 * **App Binds Not Triggering:**
     * Double-check the exact key combination recorded in the App Binds preferences.
     * Ensure BetterTab's event tap is active (related to Accessibility permissions).
+
+## 💖 Support This Project
+
+If you find BetterTab useful, please consider supporting its development. Your contribution helps keep the project alive and thriving!
+
+[Become a sponsor](https://github.com/sponsors/daniil-pogorelov) and help support the future of BetterTab!
 
 ## Future Ideas & Contributing
 

@@ -53,16 +53,14 @@ Access preferences via the status bar menu icon or by pressing `Command+,` when 
         2.  Click the "Set Shortcut" button.
         3.  The "Shortcut" cell will display "Type shortcut...".
         4.  Press your desired keyboard combination for this app.
-        5.  To clear a shortcut, trigger the recording and press `Escape`.
+        5.  To clear a shortcut, remove app from the list.
    * **Removing an App Binding:**
         1.  Select an application in the list.
         2.  Click the `-` button.
 
 ## Installation
 
-*(This section is a placeholder. For a typical GitHub release, you might provide a .dmg or a .zip containing the compiled .app file.)*
-
-1.  Download the latest `BetterTab.app` from the [Releases page](https://github.com/daniil-pogorelov/BetterTab/releases).
+1.  Download the latest `BetterTab.app` from the [Releases page]([https://github.com/daniil-pogorelov/BetterTab/releases](https://github.com/daniil-pogorelov/Better-Tab/tags)).
 2.  Drag `BetterTab.app` to your `/Applications` folder.
 3.  On first launch, macOS will likely ask for Accessibility permissions. Please grant these for BetterTab to function correctly. You can manage these in `System Settings > Privacy & Security > Accessibility`.
 

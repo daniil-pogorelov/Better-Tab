@@ -53,6 +53,20 @@
             z-index: -1; /* Place behind content */
             pointer-events: none;
         }
+        .sponsor-iframe-container {
+            max-width: 600px; /* Max width of the iframe */
+            width: 100%; /* Make it responsive */
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 0.5rem; /* Equivalent to rounded-lg */
+            overflow: hidden; /* Ensures the iframe corners are also rounded if it has a background */
+        }
+        .sponsor-iframe {
+            display: block; /* Removes extra space below iframe */
+            border: 0;
+            width: 100%; /* Make iframe fill the container */
+            height: 225px; /* Keep original height */
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -67,7 +81,7 @@
                 <h1 class="text-2xl font-bold text-white">BetterTab</h1>
             </div>
             <div>
-                <a href="https://github.com/daniil-pogorelov/Better-Tab" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-500 transition-colors duration-200">
+                <a href="https://github.com/daniil-pogorelov/Better-Tab" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-500 transition-colors duration-200 nav-link">
                     GitHub
                 </a>
             </div>
@@ -170,7 +184,20 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="py-16 sm:py-20" style="background-color: #1a1a1a;">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold section-title text-center mb-10">
+                Support BetterTab's Development
+            </h2>
+            <p class="text-lg text-gray-300 max-w-xl mx-auto text-center mb-10">
+                If you find BetterTab useful, please consider supporting its ongoing development. Your contribution helps keep the project alive and thriving!
+            </p>
+            <div class="sponsor-iframe-container shadow-xl">
+                <iframe src="https://github.com/sponsors/daniil-pogorelov/card" title="Sponsor daniil-pogorelov" class="sponsor-iframe"></iframe>
             </div>
         </div>
     </section>

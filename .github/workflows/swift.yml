@@ -24,13 +24,12 @@ jobs:
       run: |
         xcodebuild -version
         swift --version
-
+        
     - name: Build application
       run: |
-        xcodebuild -project Better-Tab.xcodeproj -scheme BetterTab -destination 'platform=macOS' CODE_SIGNING_ALLOWED=NO
-      working-directory: ${{ github.workspace }}
+        xcodebuild -project BetterTab/BetterTab.xcodeproj -scheme BetterTab -destination 'platform=macOS' CODE_SIGNING_ALLOWED=NO
 
     - name: Run tests
       run: |
-        xcodebuild -project Better-Tab.xcodeproj -scheme BetterTab -destination 'platform=macOS'
-      working-directory: ${{ github.workspace }}
+        xcodebuild -project BetterTab/BetterTab.xcodeproj -scheme BetterTab -destination 'platform=macOS'
+

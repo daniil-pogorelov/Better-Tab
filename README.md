@@ -78,7 +78,7 @@ Access preferences via the status bar menu icon or by pressing `Command+,` when 
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/daniil-pogorelov/Better-Tab.git](https://github.com/daniil-pogorelov/Better-Tab.git)
+    git clone https://github.com/daniil-pogorelov/Better-Tab.git
     cd BetterTab
     ```
 2.  Open `BetterTab.xcodeproj` in Xcode.

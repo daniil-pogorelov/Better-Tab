@@ -50,7 +50,7 @@ Access preferences via the status bar menu icon or by pressing `Command+,` when 
         3.  The application will be added to the list.
    * **Setting/Changing a Shortcut:**
         1.  Select an application in the list.
-        2.  Click the "Set Shortcut" button (or double-click the "Shortcut" cell for that app).
+        2.  Click the "Set Shortcut" button.
         3.  The "Shortcut" cell will display "Type shortcut...".
         4.  Press your desired keyboard combination for this app.
         5.  To clear a shortcut, trigger the recording and press `Escape`.

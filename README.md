@@ -78,8 +78,8 @@ Access preferences via the status bar menu icon or by pressing `Command+,` when 
 4.  Click the "Build and then run" button (or `Cmd+R`).
 
 **Requirements:**
-* macOS [Specify your minimum target macOS version, e.g., 12.0 or later]
-* Xcode [Specify your Xcode version, e.g., 15.0 or later]
+* macOS 14.0 or later
+* Xcode 16 or later
 
 ## Troubleshooting
 

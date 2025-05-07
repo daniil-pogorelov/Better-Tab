@@ -27,8 +27,10 @@ jobs:
 
     - name: Build application
       run: |
-        xcodebuild build -scheme BetterTab -destination 'platform=macOS' CODE_SIGNING_ALLOWED=NO
+        xcodebuild -project Better-Tab.xcodeproj -scheme BetterTab -destination 'platform=macOS' CODE_SIGNING_ALLOWED=NO
+      working-directory: ${{ github.workspace }}
 
     - name: Run tests
       run: |
-        xcodebuild test -scheme BetterTab -destination 'platform=macOS'
+        xcodebuild -project Better-Tab.xcodeproj -scheme BetterTab -destination 'platform=macOS'
+      working-directory: ${{ github.workspace }}

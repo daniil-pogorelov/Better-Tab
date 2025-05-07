@@ -36,6 +36,8 @@ Here's a glimpse of BetterTab in action:
 ![BetterTab Switcher with Filtered Apps](./docs/assets/images/BetterApp_Switcher_Two_Apps.png)
 *Filtering apps by typing "s".*
 
+[Video Demo](https://v.redd.it/link/1kh712v/asset/81nt0kl72fze1/HLSPlaylist.m3u8?f=sd&v=1&a=1749240460%2CNDMwZWU0ZmU4NGJkYWFlMjY5NTJkOThiZmVlMjY3MTA1YTY0NzY3YWZkMGI3M2JjMzIwNjk3MWExN2I5ZjI2MQ%3D%3D)
+
 ## Preferences
 
 Access preferences via the status bar menu icon or by pressing `Command+,` when the app is active (if it has a main menu visible).
@@ -118,3 +120,4 @@ Contributions are welcome! Please feel free to fork the repository, make changes
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+

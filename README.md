@@ -62,7 +62,7 @@ Access preferences via the status bar menu icon or by pressing `Command+,` when 
 
 *(This section is a placeholder. For a typical GitHub release, you might provide a .dmg or a .zip containing the compiled .app file.)*
 
-1.  Download the latest `BetterTab.app` from the [Releases page](https://github.com/YOUR_USERNAME/BetterTab/releases) (replace with your actual link).
+1.  Download the latest `BetterTab.app` from the [Releases page](https://github.com/daniil-pogorelov/BetterTab/releases).
 2.  Drag `BetterTab.app` to your `/Applications` folder.
 3.  On first launch, macOS will likely ask for Accessibility permissions. Please grant these for BetterTab to function correctly. You can manage these in `System Settings > Privacy & Security > Accessibility`.
 

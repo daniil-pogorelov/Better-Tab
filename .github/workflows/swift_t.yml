@@ -1,0 +1,38 @@
+name: Swift Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build_and_test:
+    name: Build and Test macOS App
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Xcode
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: '16.2'
+
+    - name: Print Deployment Target
+      run: |
+        xcodebuild -project BetterTab/BetterTab.xcodeproj \
+          -scheme BetterTab \
+          -showBuildSettings | grep MACOSX_DEPLOYMENT_TARGET
+
+    - name: Run tests
+      run: |
+        xcodebuild \
+          -project BetterTab/BetterTab.xcodeproj \
+          -scheme BetterTab \
+          -destination 'platform=macOS' \
+          test \
+          CODE_SIGNING_ALLOWED=NO \
+          CODE_SIGNING_REQUIRED=NO \
+          CODE_SIGN_IDENTITY=""

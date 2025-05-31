@@ -101,12 +101,6 @@ Access preferences via the status bar menu icon or by pressing `Command+,` when 
     * Double-check the exact key combination recorded in the App Binds preferences.
     * Ensure BetterTab's event tap is active (related to Accessibility permissions).
 
-## 💖 Support This Project
-
-If you find BetterTab useful, please consider supporting its development. Your contribution helps keep the project alive and thriving!
-
-[Become a sponsor](https://github.com/sponsors/daniil-pogorelov) and help support the future of BetterTab!
-
 ## Future Ideas & Contributing
 
 * [ ] More visual customization options for the switcher overlay (size, colors, fonts).

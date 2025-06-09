@@ -57,7 +57,7 @@ Issues, suggestions or feature requests?
 
 ## 📄 License
 
-MIT License. See `LICENSE`.
+See `LICENSE`.
 
 ---
 

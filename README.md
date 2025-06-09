@@ -19,7 +19,7 @@ Enchanced production version
 <h1 align="center">
   <img src="https://raw.githubusercontent.com/daniil-pogorelov/Better-Tab/refs/heads/v2/docs/assets/img/128.png" alt="BetterTab">
    <br>
-   BetterTab v2 | <a href="https://github.com/daniil-pogorelov/Better-Tab/tree/v2">Repository</a>
+   BetterTab v2 | <a href="https://github.com/daniil-pogorelov/Better-Tab/tree/v2">Repository</a> | <a href="https://2139130240062.gumroad.com/l/BetterTab">Get</a>
    <br>
 </h1>
 

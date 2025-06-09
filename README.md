@@ -57,7 +57,7 @@ Issues, suggestions or feature requests?
 
 ## 📄 License
 
-See `LICENSE`.
+See [LICENSE](https://github.com/daniil-pogorelov/Better-Tab/blob/v2/LICENSE).
 
 ---
 

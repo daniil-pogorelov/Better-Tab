@@ -1,4 +1,9 @@
-# BetterTab v1 - The Smarter macOS App Switcher
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/daniil-pogorelov/Better-Tab/refs/heads/v1/docs/assets/images/128.png" alt="BetterTab">
+   <br>
+   BetterTab v1
+   <br>
+</h1>
 
 BetterTab is a macOS application designed to enhance your app switching experience. It provides a customizable, quick-launch overlay for your running applications and allows you to define app-specific hotkeys for instant access to your favorite apps.
 

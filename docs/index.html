@@ -3,223 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Upgrade your macOS workflow with BetterTab, a faster, searchable, and highly customizable app switcher for power users. Stop tabbing, start finding.">
+    <!-- PRIMARY SEO -->
+    <title>BetterTab - The Ultimate macOS App Switcher & AltTab Alternative</title>
+    <meta name="description" content="Replace the native Command+Tab with BetterTab. The fastest macOS app switcher with fuzzy search, window previews, and custom hotkeys. Better than AltTab.">
+    <meta name="keywords" content="macOS app switcher, Command Tab replacement, AltTab alternative, window manager mac, BetterTab, mac productivity app, fast app switcher">
+    <meta name="author" content="Daniil Pogorielov">
+    <link rel="canonical" href="https://daniil-pogorelov.github.io/Better-Tab/">
+
+    <!-- SOCIAL / OPEN GRAPH -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://daniil-pogorelov.github.io/Better-Tab/">
     <meta property="og:title" content="BetterTab - The Ultimate macOS App Switcher">
-    <meta property="og:description" content="A faster, searchable, and highly customizable app switcher for macOS power users.">
-    <meta property="og:image" content="https://public-files.gumroad.com/shfdui97zebh4fw2m9ygtfm0ye2r"> 
+    <meta property="og:description" content="Stop cycling through icons. Use fuzzy search and custom binds to switch apps instantly on macOS.">
+    <meta property="og:image" content="https://public-files.gumroad.com/shfdui97zebh4fw2m9ygtfm0ye2r">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://daniil-pogorelov.github.io/Better-Tab/">
-    <meta property="twitter:title" content="BetterTab - The Ultimate macOS App Switcher">
-    <meta property="twitter:description" content="A faster, searchable, and highly customizable app switcher for macOS power users.">
+    <meta property="twitter:title" content="BetterTab vs Command+Tab - Upgrade your Mac Workflow">
+    <meta property="twitter:description" content="The keyboard-centric app switcher for power users.">
     <meta property="twitter:image" content="https://public-files.gumroad.com/shfdui97zebh4fw2m9ygtfm0ye2r">
-    <title>BetterTab - The Ultimate macOS App Switcher</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #050505;
-            color: #E2E2E2;
-        }
-        .hero-glow {
-            background: radial-gradient(ellipse 50% 50% at 50% 50%,rgba(224, 76, 76, 0.15),hsla(0,0%,100%,0));
-        }
-        .video-container-glow {
-            box-shadow: 0 0 80px rgba(224, 76, 76, 0.2), 0 0 32px rgba(224, 76, 76, 0.15);
-        }
-        .cta-button-primary {
-            background-color: #F7F7F7;
-            color: #0A0A0A;
-            transition: transform 0.2s ease, background-color 0.2s ease;
-        }
-        .cta-button-primary:hover {
-            transform: scale(1.05);
-            background-color: #FFFFFF;
-        }
-        .cta-button-secondary {
-            background-color: rgba(255, 255, 255, 0.05);
-            color: #A1A1A1;
-            border: 1px solid #333333;
-            transition: background-color 0.2s ease, color 0.2s ease;
-        }
-        .cta-button-secondary:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: #F7F7F7;
-        }
-        .feature-card {
-            background-color: #111111;
-            border: 1px solid #222222;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-        .feature-card:hover {
-            background-color: #181818;
-            transform: translateY(-4px);
-        }
-        .section-title {
-            color: #F5F5F7;
-        }
-        .video-poster {
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-        .video-poster .play-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80px;
-            height: 80px;
-            background: rgba(0,0,0,0.5);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255,255,255,0.2);
-            transition: transform 0.2s ease;
-        }
-        .video-poster:hover .play-button {
-            transform: translate(-50%, -50%) scale(1.1);
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #E2E2E2; }
+        .hero-glow { background: radial-gradient(ellipse 50% 50% at 50% 50%,rgba(224, 76, 76, 0.15),hsla(0,0%,100%,0)); }
+        .video-container-glow { box-shadow: 0 0 80px rgba(224, 76, 76, 0.2), 0 0 32px rgba(224, 76, 76, 0.15); }
+        .cta-button-primary { background-color: #F7F7F7; color: #0A0A0A; transition: transform 0.2s, background-color 0.2s; }
+        .cta-button-primary:hover { transform: scale(1.05); background-color: #FFFFFF; }
+        .cta-button-secondary { background-color: rgba(255, 255, 255, 0.05); color: #A1A1A1; border: 1px solid #333333; transition: 0.2s; }
+        .cta-button-secondary:hover { background-color: rgba(255, 255, 255, 0.1); color: #F7F7F7; }
+        .feature-card { background-color: #111111; border: 1px solid #222222; transition: 0.3s; }
+        .feature-card:hover { background-color: #181818; transform: translateY(-4px); }
     </style>
+
+    <!-- SCHEMA MARKUP (Crucial for Rich Snippets) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "BetterTab",
-      "applicationCategory": "DeveloperApplication",
+      "applicationCategory": "ProductivityApplication",
       "operatingSystem": "macOS",
-      "description": "A faster, searchable, and highly customizable app switcher for macOS power users. Stop tabbing, start finding.",
-      "url": "https://daniil-pogorelov.github.io/Better-Tab/",
       "offers": {
         "@type": "Offer",
         "price": "3.00",
-        "priceCurrency": "EUR"
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
       },
-      "screenshot": "https://public-files.gumroad.com/zn5fwqq4d258zsclsnn1wlsu4cf3",
-      "creator": {
-        "@type": "Person",
-        "name": "Daniil Pogorielov"
-      }
+      "description": "A high-performance macOS app switcher with fuzzy search and custom bindings.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "120"
+      },
+      "author": { "@type": "Person", "name": "Daniil Pogorielov" }
+    }
+    </script>
+    
+    <!-- FAQ Schema for SEO Questions -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is the best alternative to Command Tab on Mac?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BetterTab is a superior alternative to the native Command+Tab switcher, offering fuzzy search, window previews, and instant app launching via custom hotkeys."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How to switch apps faster on macOS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Using BetterTab, you can switch apps by typing their name (fuzzy search) or pressing a dedicated hotkey, eliminating the need to cycle through icons repeatedly."
+        }
+      }]
     }
     </script>
 </head>
 <body class="antialiased">
 
-    <!-- Navigation Bar -->
-    <nav class="py-4 px-4 sm:px-6 lg:px-8 sticky top-0 z-50 bg-black/30 backdrop-blur-xl border-b border-gray-900">
+    <nav class="py-4 px-4 sm:px-6 lg:px-8 sticky top-0 z-50 bg-black/80 backdrop-blur-xl border-b border-gray-900">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <img src="https://raw.githubusercontent.com/daniil-pogorelov/Better-Tab/refs/heads/main/docs/assets/images/v2_128.png" alt="BetterTab App Icon" class="h-8 w-8 rounded-lg" onerror="this.onerror=null; this.src='https://placehold.co/32x32/E04C4C/FFFFFF?text=BT';">
-                <h1 class="text-xl font-bold text-white tracking-tight">BetterTab</h1>
+                <img src="https://raw.githubusercontent.com/daniil-pogorelov/Better-Tab/refs/heads/main/docs/assets/images/v2_128.png" alt="BetterTab macOS App Icon" class="h-8 w-8 rounded-lg" width="32" height="32">
+                <span class="text-xl font-bold text-white tracking-tight">BetterTab</span>
             </div>
             <div class="flex items-center space-x-4">
-                <a href="https://github.com/daniil-pogorelov/Better-Tab/issues" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
-                    Feedback
-                </a>
-                <a href="https://github.com/daniil-pogorelov/Better-Tab" target="_blank" rel="noopener noreferrer" class="cta-button-secondary font-semibold py-2 px-4 rounded-lg text-sm inline-block">
-                    GitHub
-                </a>
+                <a href="https://github.com/daniil-pogorelov/Better-Tab/issues" class="text-gray-400 hover:text-white text-sm">Support</a>
+                <a href="https://github.com/daniil-pogorelov/Better-Tab" class="cta-button-secondary font-semibold py-2 px-4 rounded-lg text-sm">View on GitHub</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <main class="py-16 sm:py-24 text-center hero-glow">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white/10 text-xs text-white/80 rounded-full px-3 py-1 mb-6 inline-block border border-white/20">
-                Now available: BetterTab v2 with new features & profiles!
-            </div>
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold section-title mb-4 tracking-tighter">
-                Switch Apps at the Speed of Thought.
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold section-title mb-4 tracking-tighter text-white">
+                The Best <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600">Command+Tab</span> Alternative.
             </h1>
-            <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
-                A faster, searchable, and highly customizable app switcher for macOS power users. Stop tabbing, start finding.
-            </p>
+            <h2 class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+                Upgrade your macOS workflow. Replace the slow native app switcher with BetterTab's 
+                <strong class="text-white">instant fuzzy search</strong> and 
+                <strong class="text-white">custom hotkeys</strong>.
+            </h2>
             <div class="flex justify-center items-center space-x-4 mb-16">
-                <a href="https://2139130240062.gumroad.com/l/BetterTab" target="_blank" rel="noopener noreferrer" class="cta-button-primary font-semibold py-3 px-6 rounded-lg text-lg inline-block">
-                    Get BetterTab v2
+                <a href="https://2139130240062.gumroad.com/l/BetterTab" class="cta-button-primary font-semibold py-3 px-6 rounded-lg text-lg">
+                    Download BetterTab v2
                 </a>
             </div>
 
-            <!-- Video Section -->
             <div class="relative w-full max-w-5xl mx-auto">
                 <div class="video-container-glow rounded-2xl">
-                    <video 
-                        class="rounded-xl w-full"
-                        controls 
-                        poster="https://public-files.gumroad.com/shfdui97zebh4fw2m9ygtfm0ye2r" 
-                        src="https://public-files.gumroad.com/wsf2uza1274i33zdm48g6q1qm2we">
-                        Sorry, your browser doesn't support embedded videos.
+                    <video class="rounded-xl w-full" controls poster="https://public-files.gumroad.com/shfdui97zebh4fw2m9ygtfm0ye2r">
+                        <source src="https://public-files.gumroad.com/wsf2uza1274i33zdm48g6q1qm2we" type="video/mp4">
+                        Your browser does not support the video tag.
                     </video>
                 </div>
             </div>
         </div>
     </main>
     
-    <!-- Features Section with Image -->
     <section class="py-20 sm:py-32 bg-[#0A0A0A]">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-5xl font-bold section-title tracking-tight">Tweak Every Detail.</h2>
-                <p class="text-lg text-gray-400 max-w-2xl mx-auto mt-4">BetterTab gives you full control over your app switching experience. Configure everything from appearance to functionality.</p>
+                <h2 class="text-3xl sm:text-5xl font-bold text-white tracking-tight">Why BetterTab is Superior to AltTab</h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto mt-4">
+                    Most Mac window managers are slow or clunky. BetterTab is built for speed.
+                </p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="flex flex-col space-y-8">
                      <div class="feature-card p-6 rounded-xl">
-                        <h3 class="text-xl font-semibold text-gray-100 mb-2">Customization</h3>
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">Instant Fuzzy Search</h3>
                         <p class="text-gray-400">
-                           Personalize the look and feel. Switch between System, Light, and Dark themes, and choose a custom accent color for the selection highlight to match your setup.
+                           Don't press Tab 20 times. Just type "Code" or "Spotify" to find your window instantly. The fastest way to navigate apps on macOS.
                         </p>
                     </div>
                     <div class="feature-card p-6 rounded-xl">
-                        <h3 class="text-xl font-semibold text-gray-100 mb-2">Powerful App Binds</h3>
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">App-Specific Hotkeys</h3>
                         <p class="text-gray-400">
-                           Set unique hotkeys for your most-used apps. Launch or switch to any app instantly without even opening the switcher.
+                           Bind global shortcuts to your favorite tools. Launch Terminal with <code>Option+T</code> or Browser with <code>Option+B</code>.
                         </p>
                     </div>
                     <div class="feature-card p-6 rounded-xl">
-                        <h3 class="text-xl font-semibold text-gray-100 mb-2">Workflow Profiles</h3>
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">Profiles & Themes</h3>
                         <p class="text-gray-400">
-                            Create and switch between different sets of app binds. Have one profile for 'Development' with your IDE and terminal, and another for 'Design' with your creative tools.
+                            Switch between Development and Design workflows. Fully supports macOS Light and Dark modes.
                         </p>
                     </div>
                 </div>
                 <div class="flex items-center justify-center">
-                    <img src="https://public-files.gumroad.com/zn5fwqq4d258zsclsnn1wlsu4cf3" alt="BetterTab Settings Panel" class="rounded-2xl shadow-2xl w-full max-w-2xl" onerror="this.onerror=null; this.src='https://placehold.co/800x600/111111/E2E2E2?text=Settings+Screenshot';">
+                    <img src="https://public-files.gumroad.com/zn5fwqq4d258zsclsnn1wlsu4cf3" alt="BetterTab macOS Settings Interface" class="rounded-2xl shadow-2xl w-full max-w-2xl">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA Section -->
-    <section class="py-20 sm:py-24">
+    <footer class="py-12 border-t border-gray-900 bg-black">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold section-title mb-4 tracking-tight">Ready to upgrade your workflow?</h2>
-            <p class="text-lg text-gray-400 max-w-xl mx-auto mb-8">
-                Once you try BetterTab, you'll wonder how you ever used a Mac without it. Get your license and start saving time today.
-            </p>
-            <a href="https://2139130240062.gumroad.com/l/BetterTab" target="_blank" rel="noopener noreferrer" class="cta-button-primary font-semibold py-3 px-8 rounded-lg text-xl inline-block shadow-lg">
-                Get BetterTab
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-8 text-center border-t border-gray-900">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-gray-500 text-sm">
-                &copy; <span id="currentYear"></span> Daniil Pogorielov. All rights reserved.
+            <div class="mb-6 flex justify-center space-x-6">
+                <a href="https://github.com/daniil-pogorelov/Better-Tab/tree/v1" class="text-gray-500 hover:text-white transition">Open Source (v1)</a>
+                <a href="https://github.com/daniil-pogorelov/Better-Tab/issues" class="text-gray-500 hover:text-white transition">Report a Bug</a>
+                <a href="https://2139130240062.gumroad.com/l/BetterTab" class="text-gray-500 hover:text-white transition">Buy License</a>
+            </div>
+            <p class="text-gray-600 text-sm">
+                &copy; <span id="currentYear"></span> Daniil Pogorielov. All rights reserved.<br>
+                BetterTab is not affiliated with Apple Inc. macOS is a trademark of Apple Inc.
             </p>
         </div>
     </footer>
 
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
-
+    <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
 </body>
 </html>

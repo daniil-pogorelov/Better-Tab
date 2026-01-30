@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daniil-pogorelov.github.io/Better-Tab/sitemap.xml

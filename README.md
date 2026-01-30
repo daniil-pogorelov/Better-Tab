@@ -36,8 +36,8 @@ Unlike **AltTab** or **Contexts**, BetterTab focuses on **keyboard-first navigat
 
 ## ✨ Key Features (v2 Pro)
 - **⚡️ Instant Fuzzy Search:** Type partial names to filter running apps immediately.
-- **⌨️ App-Specific Hotkeys:** Define global shortcuts to focus specific apps instantly.
-- **🖥️ Live Window Previews:** See the actual content of the window before you switch.
+- **⌨️ App-Specific Hotkeys:** Define global shortcuts profiles to focus specific apps instantly.
+- **🖥️ Good Looking:** Looking close to the original macOS switcher.
 - **🎨 Custom Themes:** Beautiful UI that matches your macOS Light or Dark mode perfectly.
 - **🍏 Native Performance:** Written in Swift for zero lag and minimal battery usage.
 
